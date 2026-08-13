@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-hidden="true">
+  <title>签筒</title>
+  <desc>Fortune tube linear icon</desc>
+  <ellipse cx="12" cy="6.6" rx="4.4" ry="1.7"/>
+  <path d="M7.6 6.6 L7.3 18.4 C7.3 19.5 8.1 20.3 9.3 20.3 L14.7 20.3 C15.9 20.3 16.7 19.5 16.7 18.4 L16.4 6.6"/>
+  <path d="M8.6 6.4 L8.8 3.1 L10.1 1.7"/>
+  <path d="M12 6.6 L12 2"/>
+  <path d="M15.2 6.4 L15 3.3 L13.7 1.5"/>
+</svg>

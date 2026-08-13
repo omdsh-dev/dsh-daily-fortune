@@ -1,0 +1,53 @@
+/* QuoteBlock: the centered daily quote. */
+
+.quote {
+  box-sizing: border-box;
+  border: 1px solid var(--dsw-alias-border-l1);
+  border-radius: 16px;
+  background: var(--dsw-alias-bg-layer-1);
+  padding: 20px;
+  text-align: center;
+}
+
+.quoteHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.quoteHeader h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+}
+
+.quoteBody {
+  margin-top: 6px;
+}
+
+.quoteText {
+  margin: 16px 0 12px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--dsw-alias-label-primary);
+}
+
+.quoteText[data-loading='true'] {
+  color: var(--dsw-alias-label-tertiary);
+}
+
+.quoteMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.quoteAuthor {
+  font-size: 12px;
+  color: var(--dsw-alias-label-secondary);
+}

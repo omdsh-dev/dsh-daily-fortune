@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 425" role="img" aria-hidden="true">
+  <title>塔罗牌背</title>
+  <desc>Symmetrical purple-and-gold tarot card back ornament, no text</desc>
+  <defs>
+    <linearGradient id="deckGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f1d58"/>
+      <stop offset="1" stop-color="#180f35"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d4af37" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="starGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9cc70"/>
+      <stop offset="1" stop-color="#b8912f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card base -->
+  <rect x="6" y="6" width="238" height="413" rx="18" fill="url(#deckGrad)" stroke="#d4af37" stroke-width="1.6"/>
+  <rect x="17" y="17" width="216" height="391" rx="12" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- corner scrollwork, drawn once at the top-left and reflected -->
+  <g id="corner">
+    <path d="M17 78 L17 32 Q17 17 32 17 L78 17" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+    <path d="M17 78 Q30 78 37 64 Q41 54 35 49" fill="none" stroke="#d4af37" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M78 17 Q78 30 64 37 Q54 41 49 35" fill="none" stroke="#d4af37" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M60 42 Q69 31 77 25 Q67 37 60 42 Z" fill="#d4af37" opacity="0.8"/>
+    <circle cx="35" cy="49" r="2.2" fill="#d4af37"/>
+    <circle cx="49" cy="35" r="2.2" fill="#d4af37"/>
+  </g>
+  <use href="#corner"/>
+  <use href="#corner" transform="rotate(90 125 212.5)"/>
+  <use href="#corner" transform="rotate(180 125 212.5)"/>
+  <use href="#corner" transform="rotate(270 125 212.5)"/>
+
+  <!-- edge rosettes -->
+  <path d="M125 24 l6.5 6.5 -6.5 6.5 -6.5 -6.5 Z" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+  <path d="M125 388 l6.5 6.5 -6.5 6.5 -6.5 -6.5 Z" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+  <path d="M33.5 212.5 l6.5 6.5 -6.5 6.5 -6.5 -6.5 Z" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+  <path d="M216.5 212.5 l6.5 6.5 -6.5 6.5 -6.5 -6.5 Z" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+
+  <!-- central eight-point star -->
+  <circle cx="125" cy="212.5" r="72" fill="url(#glow)"/>
+  <circle cx="125" cy="212.5" r="58" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.85"/>
+  <rect x="84" y="171.5" width="82" height="82" fill="url(#starGrad)" stroke="#8a6d1f" stroke-width="1"/>
+  <rect x="84" y="171.5" width="82" height="82" fill="url(#starGrad)" stroke="#8a6d1f" stroke-width="1" transform="rotate(45 125 212.5)"/>
+  <circle cx="125" cy="212.5" r="27" fill="none" stroke="#d4af37" stroke-width="1.4"/>
+  <circle cx="125" cy="212.5" r="7" fill="url(#starGrad)" stroke="#8a6d1f" stroke-width="0.8"/>
+
+  <!-- orbit dots -->
+  <g fill="#d4af37">
+    <circle cx="125" cy="154.5" r="2.6"/>
+    <circle cx="183" cy="212.5" r="2.6"/>
+    <circle cx="125" cy="270.5" r="2.6"/>
+    <circle cx="67" cy="212.5" r="2.6"/>
+    <circle cx="166" cy="171.5" r="2.6"/>
+    <circle cx="166" cy="253.5" r="2.6"/>
+    <circle cx="84" cy="253.5" r="2.6"/>
+    <circle cx="84" cy="171.5" r="2.6"/>
+  </g>
+</svg>

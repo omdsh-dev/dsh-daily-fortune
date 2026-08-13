@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" role="img" aria-hidden="true">
+  <title>签筒</title>
+  <desc>Ink-wash bamboo fortune-tube illustration with cinnabar-tipped sticks</desc>
+  <defs>
+    <linearGradient id="tubeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4d4942"/>
+      <stop offset="0.45" stop-color="#34312b"/>
+      <stop offset="1" stop-color="#57524a"/>
+    </linearGradient>
+    <linearGradient id="stickGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efdfb8"/>
+      <stop offset="0.5" stop-color="#ddc793"/>
+      <stop offset="1" stop-color="#c9b179"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d8452f"/>
+      <stop offset="1" stop-color="#b02a1e"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- ink wash backdrop -->
+  <ellipse cx="80" cy="148" rx="72" ry="48" fill="#4a463e" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="80" cy="172" rx="47" ry="6" fill="#1c1a16" opacity="0.32" filter="url(#soft)"/>
+
+  <!-- tube body -->
+  <path d="M46 58 C46 53.5 114 53.5 114 58 L115.6 146 C115.6 159.5 44.4 159.5 44.4 146 Z" fill="url(#tubeGrad)"/>
+  <!-- bamboo nodes -->
+  <path d="M44.6 93 C60 90 100 90 115.4 93 L115.7 97.5 C100 95 60 95 44.3 97.5 Z" fill="#2b2822" opacity="0.55"/>
+  <path d="M44.5 128 C60 125 100 125 115.5 128 L115.8 132.5 C100 130 60 130 44.2 132.5 Z" fill="#2b2822" opacity="0.55"/>
+  <!-- cylinder shading -->
+  <rect x="52" y="58" width="5.5" height="90" rx="2.75" fill="#ffffff" opacity="0.08"/>
+  <rect x="105" y="58" width="6" height="90" rx="3" fill="#000000" opacity="0.16"/>
+
+  <!-- tube mouth -->
+  <ellipse cx="80" cy="58" rx="34" ry="9" fill="#6f695b"/>
+  <ellipse cx="80" cy="58" rx="27" ry="6.5" fill="#211d18"/>
+
+  <!-- sticks -->
+  <g id="stick">
+    <path d="M-2.6 -16 L-2.8 64 L2.8 64 L2.6 -16 Z" fill="url(#stickGrad)" stroke="#7c6d49" stroke-width="0.7"/>
+    <line x1="-2.7" y1="10" x2="2.7" y2="10" stroke="#8a7a55" stroke-width="0.8"/>
+    <path d="M-2.6 -42 C-2.6 -36 -2 -32 0 -30.4 C2 -32 2.6 -36 2.6 -42 L2.6 -16 L-2.6 -16 Z" fill="url(#redGrad)" stroke="#9c241a" stroke-width="0.7"/>
+  </g>
+  <use href="#stick" transform="translate(60 56) rotate(-7)"/>
+  <use href="#stick" transform="translate(72 60) rotate(3)"/>
+  <use href="#stick" transform="translate(88 52) rotate(-3)"/>
+  <use href="#stick" transform="translate(100 62) rotate(9)"/>
+
+  <!-- blank cinnabar seal, no text -->
+  <rect x="99" y="144" width="12" height="12" rx="1.5" fill="#b8322a" opacity="0.88" transform="rotate(-4 105 150)"/>
+
+  <!-- floating ink dots -->
+  <circle cx="30" cy="60" r="2.2" fill="#38342d" opacity="0.7"/>
+  <circle cx="132" cy="44" r="1.6" fill="#38342d" opacity="0.6"/>
+</svg>

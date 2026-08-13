@@ -1,0 +1,244 @@
+/* QianBlock: the shaking-tube ritual, the lot card, and the 7-day badges. */
+
+.qian {
+  box-sizing: border-box;
+  border: 1px solid var(--dsw-alias-border-l1);
+  border-radius: 16px;
+  background: var(--dsw-alias-bg-layer-1);
+  padding: 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sectionHeader h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  padding: 24px 0 12px;
+}
+
+.tubeArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.tube {
+  width: 132px;
+}
+
+.tube svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tubeShaking {
+  animation: fortune-shake 1.2s ease-in-out;
+  transform-origin: 50% 88%;
+}
+
+@keyframes fortune-shake {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-8deg); }
+  25% { transform: rotate(7deg); }
+  40% { transform: rotate(-6deg); }
+  55% { transform: rotate(5deg); }
+  70% { transform: rotate(-3.5deg); }
+  85% { transform: rotate(2deg); }
+}
+
+.popStick {
+  position: absolute;
+  top: 6px;
+  width: 20px;
+  pointer-events: none;
+  animation: fortune-pop 0.45s ease-out forwards;
+}
+
+.popStick svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fortune-pop {
+  from { transform: translateY(0) rotate(-8deg); opacity: 0; }
+  30% { opacity: 1; }
+  to { transform: translateY(-84px) rotate(-18deg); opacity: 1; }
+}
+
+.drawButton {
+  margin-top: 2px;
+}
+
+/* --- revealed card --- */
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 14px;
+  background: var(--dsw-alias-bg-layer-2);
+  padding: 20px 22px;
+  animation: fortune-flip 0.5s ease;
+}
+
+@keyframes fortune-flip {
+  from { transform: perspective(700px) rotateY(86deg); opacity: 0; }
+  to { transform: perspective(700px) rotateY(0deg); opacity: 1; }
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lotNumber {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dsw-alias-label-primary);
+}
+
+.grade {
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.gradeShang { background: #b3402a; }
+.gradeZhong { background: #6b7280; }
+.gradeXia { background: #2f6db3; }
+
+.cardTitle {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.poem {
+  margin: 10px 0 14px;
+  text-align: center;
+}
+
+.poem p {
+  margin: 0;
+  font-family: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  font-size: 17px;
+  line-height: 1.95;
+  letter-spacing: 0.1em;
+  color: var(--dsw-alias-label-primary);
+}
+
+.reading {
+  border-radius: 10px;
+  background: var(--dsw-alias-bg-layer-1);
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--dsw-alias-label-primary-dimmed);
+}
+
+.reading p { margin: 0 0 4px; }
+.reading p:last-child { margin-bottom: 0; }
+
+.readingLabel {
+  font-size: 11px;
+  color: var(--dsw-alias-label-caption);
+  margin-bottom: 4px;
+}
+
+.verses {
+  letter-spacing: 0.05em;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.story {
+  margin-top: 10px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--dsw-alias-label-dimmed);
+}
+
+.story p { margin: 0; }
+
+.cardActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+/* --- 近 7 日 badges --- */
+
+.recent {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--dsw-alias-border-l2);
+}
+
+.recentLabel {
+  font-size: 12px;
+  color: var(--dsw-alias-label-caption);
+}
+
+.recentRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.dayBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 46px;
+  padding: 4px 8px;
+  border: 1px solid var(--dsw-alias-border-l1);
+  border-radius: 10px;
+  background: var(--dsw-alias-bg-base);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.dayBadge:hover {
+  border-color: var(--dsw-alias-border-l2);
+}
+
+.dayBadgeToday {
+  border-color: var(--dsw-alias-brand-primary);
+}
+
+.dayDate {
+  font-size: 11px;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.dayGrade {
+  font-size: 10px;
+  color: var(--dsw-alias-label-tertiary);
+}

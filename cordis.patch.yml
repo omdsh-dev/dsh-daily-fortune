@@ -1,0 +1,4 @@
+# Profile Bundle entry. dsh plugin add applies this row once.
+- insert:
+    - id: daily-fortune
+      name: '@deepseek-ai/dsh-daily-fortune'
