@@ -1,5 +1,7 @@
 # DSH Daily Fortune
 
+**Author / Maintainer:** [@Zacklinkk](https://github.com/Zacklinkk)
+
 独立的 DeepSeek Harness Profile Bundle，提供「今日一签」会话页、输入区抽签按钮、观音灵签、塔罗牌阵、每日名言与设置面板。
 
 ## 兼容性
